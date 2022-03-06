@@ -3,9 +3,11 @@
   --secondary-font: "Lexend Deca", sans-serif;
   --green-color: #255553;
 }
+
 body {
   background-color: #efede5;
 }
+
 nav {
   background-image: url("/media/nav-bg.png");
   background-repeat: no-repeat;
@@ -22,27 +24,33 @@ nav {
   padding: 0;
   margin: 0;
 }
+
 nav p {
   margin: 0 50px;
 }
+
 nav ul {
   margin: 0;
   padding: 0;
 }
+
 nav li {
   list-style: none;
   display: inline;
   margin: 0 30px;
 }
+
 nav li a {
   text-decoration: none;
   color: #ffffff;
+  transition: all 150ms ease-in-out;
 }
+
 nav li a:hover {
   color: #ffffff;
   text-shadow: 0 0 8px #ffffff;
-  transition: all 150ms ease-in-out;
 }
+
 #background {
   background-image: url("/media/bg-1.png");
   background-repeat: no-repeat;
@@ -154,6 +162,59 @@ img:hover {
   opacity: 1;
 }
 
+.about-page {
+  margin-bottom: 50px;
+}
+
+.about-page h2 {
+  margin-bottom: 60px;
+}
+
+.about-page .my-pic {
+  border-radius: 24px;
+  width: 33%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.about-page-desc {
+  font-size: 24px;
+  font-family: var(--secondary-font);
+  color: #212529;
+  line-height: 40px;
+  text-align: justify;
+  text-align-last: center;
+  margin: 0 150px;
+}
+
+.about-page h3 {
+  font-family: var(--primary-font);
+  color: #000000;
+  font-weight: 400;
+  font-size: 48px;
+  margin: 90px 0 60px 0;
+}
+
+.about-page-proj {
+  display: block;
+  margin: 0 auto;
+  border-radius: 30px;
+  width: 50%;
+}
+
+.about-page .proj-desc {
+  font-family: var(--secondary-font);
+  font-size: 22px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about-page .proj-desc a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .contact-buttons {
   margin-bottom: 80px;
 }
@@ -164,6 +225,7 @@ img:hover {
   margin: 30px 0;
   font-family: var(--secondary-font);
 }
+
 .contact-link {
   text-decoration: none;
   color: #ffffff;
@@ -183,11 +245,20 @@ footer .icons i {
   font-size: 40px;
   margin: 0 30px 0 30px;
   color: var(--green-color);
+  transition: all ease-in-out 100ms;
+}
+
+footer .icons i:hover {
+  color: #446e6d;
 }
 
 footer div {
   font-family: var(--secondary-font);
   text-align: center;
+}
+footer #github-link {
+  text-decoration: none;
+  color: rgb(48, 42, 42);
 }
 
 @media (max-width: 768px) {
@@ -230,6 +301,24 @@ footer div {
   .contact {
     margin: 60px 0 30px 0;
   }
+  .about-page .my-pic {
+    width: 60%;
+  }
+  .about-page-desc {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0 20px;
+  }
+
+  .about-page h3 {
+    font-size: 30px;
+  }
+  .about-page-proj {
+    width: 80%;
+  }
+  .about-page .proj-desc {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -260,6 +349,20 @@ footer div {
   nav li a {
     text-decoration: none;
     color: #000000;
+  }
+  .about-page .my-pic {
+    width: 50%;
+  }
+  .about-page-desc {
+    font-size: 18px;
+    line-height: 40px;
+    margin: 0 40px;
+  }
+  .about-page-proj {
+    width: 70%;
+  }
+  .about-page .proj-desc {
+    font-size: 20px;
   }
 }
 
